@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Logging in</title>
+		<meta charset="utf-8" />
+		<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet">
+		<link href="main.css" type="text/css" rel="stylesheet"/>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="main.js"></script>
+	</head>
+	<body>
+		<div id="site-container">
+			<h1>Welcome</h1>
+			<h2>Please log in to continue to absolutely nothing, or just do whatever you want</h2>
+			<p id="border">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+			</p>
+
+
+
+			<form class="loginform" action="" method="post" name="credentialsForm">
+				<ul id="loginwrapper">
+					<li>
+						<button type="button" name="button" onclick="nextSlide('loginwrapper', 1)">Log in</button>
+					</li>
+					<li>
+						<label for="">Username
+							<input id="emptyusername" type="text" name="username" value="" required="required" onblur="checkIfEmptyUser(event)">
+							<p id="userError">Please enter your username</p>
+						</label>
+						<label for="">Password
+							<input id="emptypw" type="password" name="password" value="" required="required" onblur="checkIfEmptyPw(event)">
+							<p id="pwError">You need to enter a correct password</p>
+						</label>
+						<input type="submit" name="" value="Log In" onclick="logIn(event)">
+						<p id="errormessage"><strong>Wrong! Try again</strong></p>
+					</li>
+					<li>
+						<h3>You're in!</h3>
+						<p>Now you can do something else with your life</p>
+						<button type="button" name="button">Yes I will</button>
+					</li>
+				</ul>
+			</form>
+
+
+
+		</div>
+	</body>
+</html>

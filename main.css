@@ -1,0 +1,88 @@
+* {
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+html, body {
+	margin: 0 auto;
+	padding: 0;
+	height: 100%;
+	width: 640px;
+}
+
+#site-container {
+	max-width: 960px;
+	background-color: #5c5c5c;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+h1, h2, h3 {
+	margin: 0 auto;
+	text-align: center;
+	padding: 11px 22px;
+}
+
+#border {
+		border-bottom: solid 4px #FFF59D;
+}
+
+p {
+	padding: 11px 22px;
+	margin: 11px 44px;
+	text-align: center;
+}
+
+#loginwrapper {
+	overflow: hidden;
+	transition: 0.2s ease-in-out;
+	transform:translate(0,0);
+	display: flex;
+	align-items: center;
+	width: 1920px;
+}
+
+li {
+	list-style-type: none;
+	float: left;
+	box-sizing: border-box;
+	width: 640px;
+}
+
+label, input, button {
+	margin: 11px auto;
+	display: block;
+	text-align: center;
+}
+
+.invisible {
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+#errormessage, #pwError, #userError {
+	text-align: center;
+	color: #EF5350;
+}
+
+.error input{
+  border:solid 1px #D42E1E;
+  color:#D42E1E;
+	background: url(error-icon.png) no-repeat scroll 1px 1px #E7B9AD;
+	background-size: 13% auto;
+	background-position: right;
+}
+
+#showEmptyField {
+	border:solid 1px #D42E1E;
+	background:#E7B9AD;
+	color:#D42E1E;
+}
+
+input{
+	height: 30px;
+}
